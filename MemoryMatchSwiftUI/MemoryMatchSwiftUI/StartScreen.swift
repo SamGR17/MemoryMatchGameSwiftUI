@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack(spacing: 300){
+                //The title
                 Text("EmojiMatch")
                     .frame(width: 300, height: 85)
                     .background(.orange)
@@ -18,7 +19,7 @@ struct ContentView: View {
                     .cornerRadius(6.0)
                     .font(.system(size: 50))
                 
-                
+                //The start button, when clicked it will take you to the game screen
                 NavigationLink(destination: GameScreen().navigationBarBackButtonHidden(true)){
                     Text("Start")
                         .frame(width: 160, height: 80)
@@ -29,7 +30,7 @@ struct ContentView: View {
                 }
             }
             .padding()
-            .background(Image("Image"))
+            .background(Image("Image")) //adds the background image in the start screen
         }
     }
 }
